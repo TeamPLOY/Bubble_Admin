@@ -13,19 +13,17 @@ export const SideBarMenu = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 20px; /* 메뉴 아이템 간 간격 */
+  gap: 10px;
 `;
 
 export const MenuItem = styled.div`
   display: flex;
-  width: 80%;
   height: 40px;
   padding: 4px 20px;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  cursor: pointer;
   font-size: 18px;
   transition: background-color 0.2s ease;
 
