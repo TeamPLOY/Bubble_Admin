@@ -1,11 +1,14 @@
-import * as S from "./style";
+import * as S from './style';
 
 export const Header = () => {
-  return (
-    <>
-      <S.Layout>
-        <S.Container></S.Container>
-      </S.Layout>
-    </>
-  );
+	return (
+		<>
+			<S.HeaderLayout>
+				<S.HeaderLogo>로고</S.HeaderLogo>
+				<S.HeaderButton>
+					<S.HeaderLogin>로그인</S.HeaderLogin>
+				</S.HeaderButton>
+			</S.HeaderLayout>
+		</>
+	);
 };
