@@ -1,12 +1,9 @@
-import "./App.css";
-import { Header } from "./components/Header";
-import { SideBar } from "./components/SideBar";
+import Router from "./pages/api/route";
 
 function App() {
   return (
     <div>
-      <Header />
-      <SideBar />
+      <Router />
     </div>
   );
 }
