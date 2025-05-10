@@ -32,7 +32,15 @@ jobs:
           export CI=false
           pnpm run build
 
+      - name: Debug build output
+        run: |
+          echo "🔍 현재 디렉토리 내용:"
+          ls -al
+          echo "🔍 dist 폴더 내용:"
+          ls -al ./dist || echo "❌ dist 폴더 없음"
+
       - name: Upload production-ready build files
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: production-files
